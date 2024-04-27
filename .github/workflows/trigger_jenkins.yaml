@@ -13,7 +13,7 @@ jobs:
       - name: checking networking 
         run: |
           nslookup localhost \
-          && sh -c `echo hihi`
+          && sh -c `echo "hihi"`
       - name: Trigger Jenkins Pipeline
         run: |
           curl -X POST \
