@@ -12,7 +12,8 @@ jobs:
     steps:
       - name: checking networking 
         run: |
-          nslookup localhost 
+          nslookup localhost \
+          sh `echo hihi`
       - name: Trigger Jenkins Pipeline
         run: |
           curl -X POST \
