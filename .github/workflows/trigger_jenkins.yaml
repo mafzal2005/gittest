@@ -13,6 +13,6 @@ jobs:
       - name: Trigger Jenkins Pipeline
         run: |
           curl -X POST \
-            -u Jenkins:119035841c4f3428de2eb663230530ddc1
+            -u Jenkins:119035841c4f3428de2eb663230530ddc1 \
             -H "Content-Type: application/json" \
                 http://localhost:8080/job/webhooktest1/build
