@@ -10,6 +10,11 @@ jobs:
     runs-on: self-hosted
 
     steps:
+      - name: checking networking 
+        run: |
+          ping -c 5 localhost
+          nslookup localhost
+          traceroute localhost
       - name: Trigger Jenkins Pipeline
         run: |
           curl -X POST \
