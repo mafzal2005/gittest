@@ -12,9 +12,7 @@ jobs:
     steps:
       - name: checking networking 
         run: |
-          ping -c 5 localhost
-          nslookup localhost
-          traceroute localhost
+          ping -c 5 localhost 
       - name: Trigger Jenkins Pipeline
         run: |
           curl -X POST \
